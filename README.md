@@ -53,7 +53,6 @@ CS4632-BankTellerSim
 ├── bank_teller_sweep.py → Milestone 2 parameter-sweep experiment
 │
 ├── CS4632_M3_Appolon_Jason.pdf → Final LaTeX project report
-└── NOTE_Milestone_History.txt → Summary of version progression
 
 ```
 
