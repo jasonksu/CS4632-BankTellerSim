@@ -1,0 +1,21 @@
+{
+  "replications": 5,
+  "avg_wait_min": 0.1243,
+  "p95_wait_min": "",
+  "avg_service_min": 4.96912,
+  "avg_total_min": 5.06322,
+  "avg_queue_len": 0.0202,
+  "utilization_pct": 25.886,
+  "throughput_per_hour": 9.375,
+  "parameters": {
+    "experiment_name": "baseline_c3",
+    "arrival_rate_per_hour": 10,
+    "service_rate_per_hour": 12,
+    "tellers": 3,
+    "hours": 8,
+    "replications": 5,
+    "seed_base": 1000,
+    "seed": 1004
+  },
+  "wall_clock_seconds": 0.005
+}

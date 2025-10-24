@@ -1,0 +1,9 @@
+{
+  "experiment_name": "baseline_c1",
+  "arrival_rate_per_hour": 10,
+  "service_rate_per_hour": 12,
+  "tellers": 1,
+  "hours": 8,
+  "replications": 5,
+  "seed_base": 1000
+}

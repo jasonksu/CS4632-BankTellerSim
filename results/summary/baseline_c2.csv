@@ -1,0 +1,9 @@
+replications,5
+avg_wait_min,0.87008
+p95_wait_min,
+avg_service_min,5.05016
+avg_total_min,5.90978
+avg_queue_len,0.13913999999999999
+utilization_pct,40.208
+throughput_per_hour,9.525
+wall_clock_seconds,0.005
