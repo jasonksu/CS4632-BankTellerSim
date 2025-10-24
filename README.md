@@ -40,6 +40,8 @@ The system was developed across three milestones:
 ---
 
 ## Repository Structure
+
+```plaintext
 CS4632-BankTellerSim
 │
 ├── src/ → Final modular implementation (Milestone 3)
@@ -53,7 +55,7 @@ CS4632-BankTellerSim
 ├── CS4632_M3_Appolon_Jason.pdf → Final LaTeX project report
 └── NOTE_Milestone_History.txt → Summary of version progression
 
----
+```
 
 ## Example Output
 Example figure from Milestone 3 results:
