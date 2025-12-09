@@ -7,157 +7,127 @@ Email: jappolon@students.kennesaw.edu
 
 Project Overview
 
-This project models a bank teller system using discrete-event simulation (DES) principles in Python with SimPy.
-Customers arrive randomly and wait in a shared queue to be served by one of several tellers.
-The simulation measures performance metrics such as average wait time, queue length, teller utilization, throughput per hour, and percentile-based statistics.
+This project models a bank teller system using discrete-event simulation (DES) in Python with SimPy.
+Customers arrive randomly, join a shared queue, and are served by one of several tellers.
+Performance metrics include average wait time, queue length, teller utilization, throughput per hour, and time-in-system.
 
-The goal is to explore how arrival rate (λ), service rate (μ), and number of tellers (c) influence system performance and to compare results against analytical M/M/c queueing theory.
+The objective is to study how arrival rate (λ), service rate (μ), and number of tellers (c) affect system congestion and whether simulation results match analytical M/M/c theory.
 
 Implementation Summary
-
-The system was developed across multiple milestones:
-
 Milestone 1 – Project Foundation
 
-Defined the problem domain and project scope
+Defined the simulation problem
 
-Created UML class and sequence diagrams
+Built UML class and sequence diagrams
 
-Conducted an initial literature review and conceptual validation
+Conducted literature foundation and design planning
 
 Milestone 2 – Initial Implementation
 
-Built the initial SimPy-based simulation prototype
+Implemented the first working SimPy model
 
-Tracked performance statistics and utilization
+Added utilization tracking and output summarization
 
-Implemented staffing sweep experiments
+Introduced staffing sweep experimentation
 
-Incorporated instructor feedback on structure and validation
+Incorporated model correctness feedback
 
 Milestone 3 – Complete Implementation and Testing
 
-Modularized code into src/, configs/, results/, and figures/
+Structured repository into src/, configs/, results/, and figures/
 
-Performed controlled experiments with multiple replications
+Ran multiple experiments with controlled replication
 
-Generated visualizations with Matplotlib
+Produced visualizations (staffing sweep plots)
 
-Compared simulation outcomes with expected queueing behavior
-
-Documented testing procedure and results
+Compared results with expected queueing behavior
 
 Milestone 4 – Analysis and Validation
 
-Performed sensitivity analysis for arrival rate variation
+Performed sensitivity testing on arrival and service rates
 
-Performed service rate comparisons
+Produced structured outputs and summaries
 
-Generated automated CSV and JSON summaries
-
-Interpreted system behavior and validated consistency with theory
+Interpreted trends and compared against theory
 
 Milestone 5 – Final Report and Presentation
 
-Produced final refined LaTeX report integrating previous milestones
+Completed refined report with integrated figures
 
-Added visual figures and data interpretation
+Recorded demonstration video
 
-Recorded and submitted the final video demonstration
-
-Published full code, configurations, report, and video in repository
+Delivered final repository containing code, results, report, and video
 
 Repository Structure
 CS4632-BankTellerSim
 │
-├── src/                → Full implementation, experiment runner, and plotting script
-├── configs/            → JSON configuration files for experiments
-│      ├ baseline*.json
-│      ├ arrival_*.json
-│      └ service_*.json
+├── src/                → Final modular implementation
+├── configs/            → JSON experiment configurations
+├── results/            → Raw replications and summaries
+├── figures/            → Generated experiment visuals
 │
-├── results/            → Raw replications and aggregated summaries
-├── figures/            → Generated plots for the report and demo presentation
-│
-├── CS4632_M5_Appolon_FinalReport.pdf  → Final milestone report
-├── CS4632_VideoDemo.mp4               → Demonstration video
+├── CS4632_M5_Appolon_FinalReport.pdf   → Final written report
+├── CS4632_VideoDemo.mp4                → Project demonstration video
 └── README.md
 
 Example Output
 
-Example visualization produced and used in the report:
-
 Bank Teller Simulation: Staffing Sweep
 
-This visualization shows how average wait time declines and utilization drops as the number of tellers increases.
+This figure shows how average wait time falls as tellers increase while utilization declines — demonstrating capacity trade-offs.
 
 Key Insights
 
-Higher arrival rates sharply increase waiting time and congestion.
+Higher arrival rates produce sharply increasing wait times
 
-Increasing staffing reduces waiting time but decreases utilization.
+Adding staffing reduces delay but lowers utilization
 
-System turning points appear when utilization exceeds approximately 80 percent.
+System behavior aligns with M/M/c queueing theory predictions
 
-Simulation results align with expected M/M/c queueing behavior, supporting model validity.
+Significant changes occur when utilization exceeds roughly 80%
 
 Technologies Used
 
 Python 3.x
 
-SimPy for discrete-event simulation
+SimPy for discrete-event modeling
 
 Matplotlib for visualization
 
-JSON and CSV for configuration and data storage
+JSON / CSV for configuration and result storage
 
-LaTeX for formal documentation
+LaTeX for academic documentation
 
 Running the Simulation
-
-Run a baseline experiment example:
-
+Run a baseline experiment
 python src/run_experiment.py --config configs/baseline.json
 
-
-Arrival rate sensitivity experiments:
-
+Run arrival-rate sensitivity tests
 python src/run_experiment.py --config configs/arrival_10.json
 python src/run_experiment.py --config configs/arrival_12.json
 python src/run_experiment.py --config configs/arrival_14.json
 
-
-Service rate sensitivity experiments:
-
+Run service-rate sensitivity tests
 python src/run_experiment.py --config configs/service_10.json
 python src/run_experiment.py --config configs/service_12.json
 python src/run_experiment.py --config configs/service_14.json
 
-
-Visualization generation:
-
+Generate visuals
 python src/make_plots.py
 
 
-Simulation results appear under:
+Results are stored under:
 
-results/runs/
-results/summary/
-
-
-Figures appear in:
-
+results/
 figures/
 
 Version History
-
-Milestone Description Status
-M1 Project Foundation Completed
-M2 Initial Implementation Completed
-M3 Complete Implementation and Testing Completed
-M4 Analysis and Validation Completed
-M5 Final Report and Presentation Completed
-
+Milestone	Description	Status
+M1	Project Foundation	Completed
+M2	Initial Implementation	Completed
+M3	Complete Implementation & Testing	Completed
+M4	Analysis & Validation	Completed
+M5	Final Report & Presentation	Completed
 Citation
 
 Appolon, Jason. Bank Teller Discrete-Event Simulation Project.
