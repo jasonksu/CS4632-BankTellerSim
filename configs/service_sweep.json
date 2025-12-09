@@ -1,0 +1,10 @@
+
+{
+    "experiment_name": "service_sweep",
+    "num_replications": 10,
+    "hours": 8,
+    "servers": 2,
+
+    "arrival_rate_per_hour": 10,
+    "service_rate_per_hour": [10, 12, 14, 16, 18]
+}

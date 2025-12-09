@@ -1,0 +1,8 @@
+{
+  "experiment_name": "arrival_14",
+  "arrival_rate_per_hour": 14,
+  "service_rate_per_hour": 10,
+  "tellers": 2,
+  "replications": 10,
+  "hours": 4
+}
